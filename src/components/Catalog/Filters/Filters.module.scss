@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.button {
+  padding: 3px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--secondaryFont);
+  transition: color .2s ease-in-out;
+
+  &:not(:last-child) {
+    margin-right: 60px;
+  }
+
+  &.active{
+    color: var(--accent)
+  }
+
+  &:hover {
+    color: var(--accent);
+  }
+}

@@ -1,0 +1,38 @@
+.button{
+  cursor: pointer;
+  min-height: 48px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 900;
+  background-color: transparent;
+  border-radius: var(--radii);
+  transition: background-color .2s ease-in-out, color .2s ease-in-out, border .2s ease-in-out;
+
+  &.dark {
+    color: var(--font);
+    border: 1px solid currentColor;
+    background-color: var(--bgDark);
+    min-width: 138px;
+
+    &:hover{
+      background-color: var(--font);
+      color: var(--bgDark);
+    }
+  }
+
+  &.light {
+    color: #000;
+    border: transparent;
+    background-color: var(--font);
+    filter: drop-shadow(0px 3px 5px rgba(57,20,0,0.08));
+    min-width: 170px;
+
+    &:hover{
+      background-color: var(--bgDark);
+      color: var(--font);
+      border: 1px solid currentColor;
+    }
+  }
+}
+

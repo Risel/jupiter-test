@@ -1,0 +1,41 @@
+.nav{
+  display: flex;
+  align-items: center;
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+
+.link{
+  position: relative;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--font);
+
+  &:not(:last-child){
+    margin-right: 100px;
+  }
+
+  &:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: currentColor;
+    transition: width .2s ease-in-out;
+  }
+
+  &:hover{
+    &:before{
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    &:not(:last-child){
+      margin-right: 60px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.section {
+  padding-top: 160px;
+  padding-bottom: 75px;
+  background-color: var(--bgDark);
+  text-align: center;
+  color: var(--font);
+
+  @media (max-width: 992px) {
+    padding-top: 147px;
+    padding-bottom: 91px;
+  }
+}
+
+.title {
+  font-size: 72px;
+  letter-spacing: -2px;
+  line-height: 1;
+  font-weight: 800;
+  margin-bottom: 51px;
+
+  @media (max-width: 992px) {
+    font-size: 56px;
+    letter-spacing: -1px;
+  }
+}
+
+.subtitle {
+  max-width: 570px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 32px;
+}
